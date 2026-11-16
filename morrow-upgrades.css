@@ -1,0 +1,37 @@
+/* Morrow visual upgrades: curated collections, hover polish, concierge helper */
+.curated-edits{padding:100px 5vw;background:#e9e8df;color:#20211d}
+.curated-edits .section-head{margin-bottom:34px}
+.edit-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:14px}
+.edit-tile{position:relative;min-height:360px;border:0;padding:0;overflow:hidden;text-align:left;background:#d4d5c9;color:#fff;cursor:pointer}
+.edit-tile img{width:100%;height:100%;min-height:360px;object-fit:cover;position:absolute;inset:0;transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .5s}
+.edit-tile:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.62),transparent 62%)}
+.edit-tile:hover img{transform:scale(1.055);filter:saturate(.85)}
+.edit-tile span,.edit-tile b{position:absolute;z-index:1;left:24px;right:24px}
+.edit-tile span{bottom:78px;font-size:9px;letter-spacing:.17em}
+.edit-tile b{bottom:30px;display:flex;align-items:center;justify-content:space-between;font:24px Georgia,serif}
+.product-photo{overflow:hidden}
+.product-photo img{transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .5s}
+.product-card:hover .product-photo img{transform:scale(1.045);filter:saturate(.92)}
+.product-card{transition:transform .35s ease}
+.product-card:hover{transform:translateY(-5px)}
+.add-quick{transition:transform .35s ease,opacity .35s ease}
+.morrow-assistant{position:fixed;z-index:80;right:24px;bottom:24px;display:flex;align-items:flex-end;flex-direction:column;gap:12px}
+.assistant-launch{display:flex;align-items:center;gap:12px;border:1px solid rgba(255,255,255,.2);background:#d9dfc8;color:#20251d;border-radius:999px;padding:13px 18px;font-size:12px;letter-spacing:.04em;box-shadow:0 12px 35px rgba(0,0,0,.22);cursor:pointer}
+.assistant-spark{font-size:19px}
+.assistant-panel{width:min(365px,calc(100vw - 32px));padding:18px;background:#f4f1e9;color:#20211d;border:1px solid #d8d7cc;box-shadow:0 22px 70px rgba(0,0,0,.3)}
+.assistant-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:14px;border-bottom:1px solid #deddd3;font-size:10px;letter-spacing:.13em}
+.assistant-head small{display:block;color:#88897e;font-size:8px;margin-top:4px;letter-spacing:.16em}
+.assistant-head button{background:none;border:0;color:inherit;cursor:pointer}
+.assistant-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#71815f;margin-right:8px}
+.assistant-message{padding:20px 0 12px;font-size:13px;line-height:1.6}
+.assistant-message b{font:22px Georgia,serif}
+.assistant-message p{color:#6f7066;margin-top:8px}
+.assistant-prompts{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0 16px}
+.assistant-prompts button{border:1px solid #d5d4c9;background:transparent;border-radius:99px;padding:8px 10px;color:#4b4d43;font-size:10px;cursor:pointer}
+.assistant-prompts button:hover{background:#e5e8dc}
+.assistant-input{display:flex;border:1px solid #d5d4c9;background:white}
+.assistant-input input{min-width:0;flex:1;border:0;outline:0;padding:12px;font-size:12px;color:#20211d;background:transparent}
+.assistant-input button{width:42px;border:0;background:#252820;color:white;cursor:pointer}
+.assistant-disclaimer{display:block;color:#99998e;font-size:9px;margin-top:12px}
+@media(max-width:760px){.curated-edits{padding:65px 5vw}.edit-grid{grid-template-columns:1fr 1fr}.edit-large{grid-column:1/-1}.edit-tile,.edit-tile img{min-height:260px}.edit-tile b{font-size:19px;left:16px;right:16px}.edit-tile span{left:16px}.morrow-assistant{right:14px;bottom:14px}}
+@media(max-width:460px){.edit-grid{grid-template-columns:1fr}.edit-large{grid-column:auto}.edit-tile,.edit-tile img{min-height:300px}}

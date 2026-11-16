@@ -1,0 +1,32 @@
+/* Morrow OTP login experience */
+.morrow-auth{padding:0!important;display:grid;grid-template-columns:.9fr 1.1fr;gap:0!important;overflow:hidden;max-width:760px}
+.morrow-auth .auth-visual{min-height:490px;padding:34px;background:#d9dfc8;color:#20251d;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.morrow-auth .auth-visual:before,.morrow-auth .auth-visual:after{content:"";position:absolute;border:1px solid rgba(32,37,29,.22);border-radius:50%;width:330px;height:330px;left:50%;top:48%;transform:translate(-50%,-50%)}
+.morrow-auth .auth-visual:after{width:250px;height:250px}
+.morrow-auth .auth-orbit{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);width:170px;height:170px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 32% 25%,#f4f1e9,#9ca98b 62%,#59664f);box-shadow:inset -18px -20px 35px rgba(25,35,22,.22),0 25px 55px rgba(25,35,22,.2);font-family:Georgia,serif;font-size:82px;color:#273023}
+.morrow-auth .auth-visual .eyebrow,.morrow-auth .auth-visual p,.morrow-auth .auth-edition{position:relative;z-index:1}
+.morrow-auth .auth-visual p{font-family:Georgia,serif;font-size:25px;line-height:1.15;max-width:250px;margin-top:auto;margin-bottom:35px}
+.morrow-auth .auth-edition{font-size:9px;letter-spacing:.16em}
+.morrow-auth .auth-panel{padding:42px 38px;background:#f4f1e9;color:#20211d;display:flex;flex-direction:column;justify-content:center}
+.morrow-auth .auth-panel h2{font-family:Georgia,serif;font-weight:400;font-size:36px;line-height:1.05;margin:12px 0}
+.morrow-auth .auth-intro{font-size:13px;line-height:1.6;color:#77786e;margin:0 0 24px}
+.morrow-auth .auth-methods{display:grid;grid-template-columns:1fr 1fr;background:#e8e6dc;padding:4px;border-radius:999px;margin-bottom:20px}
+.morrow-auth .auth-methods button{border:0;border-radius:999px;background:transparent;padding:10px;font-size:12px;color:#77786e}
+.morrow-auth .auth-methods button.active{background:#252820;color:#fff}
+.morrow-auth .auth-form{display:grid;gap:16px}
+.morrow-auth .auth-form label{display:grid;gap:8px;font-size:11px;letter-spacing:.04em;color:#55574e}
+.morrow-auth .auth-form input{width:100%;border:1px solid #d6d5ca;background:#fff;padding:14px 13px;border-radius:5px;color:#20211d;outline:none;font-size:14px}
+.morrow-auth .auth-form input:focus{border-color:#59664f;box-shadow:0 0 0 3px rgba(89,102,79,.12)}
+.morrow-auth .phone-field{display:flex;align-items:center;border:1px solid #d6d5ca;background:#fff;border-radius:5px;padding-left:13px}
+.morrow-auth .phone-field span{font-size:13px;color:#55574e}
+.morrow-auth .phone-field input{border:0;box-shadow:none!important}
+.morrow-auth .auth-submit{min-height:48px;background:#252820;color:#fff}
+.morrow-auth .auth-divider{display:flex;align-items:center;gap:12px;margin:20px 0;color:#99998e;font-size:10px;letter-spacing:.12em}
+.morrow-auth .auth-divider:before,.morrow-auth .auth-divider:after{content:"";height:1px;background:#deddd3;flex:1}
+.morrow-auth .google-button{min-height:46px;background:#fff;border:1px solid #d6d5ca;color:#252820}
+.morrow-auth .google-mark{font-weight:700;font-size:17px;color:#4285f4}
+.morrow-auth .auth-note{display:block;margin-top:18px;color:#929287;font-size:10px;line-height:1.5}
+.morrow-auth .otp-input{text-align:center;letter-spacing:.55em;font-size:22px!important;font-weight:600}
+.morrow-auth .auth-back{justify-self:center;background:none;border:0;color:#55574e;font-size:12px;text-decoration:underline;margin-top:2px}
+.morrow-auth .auth-success{padding:14px;background:#e5eadc;border-radius:5px;color:#394532;font-size:13px}
+@media(max-width:650px){.morrow-auth{grid-template-columns:1fr;max-width:420px}.morrow-auth .auth-visual{min-height:185px;padding:22px}.morrow-auth .auth-orbit{width:90px;height:90px;font-size:45px;left:auto;right:25px;top:48%;transform:translateY(-50%)}.morrow-auth .auth-visual:before{width:160px;height:160px;left:auto;right:-30px;top:48%;transform:translateY(-50%)}.morrow-auth .auth-visual:after{display:none}.morrow-auth .auth-visual p{font-size:18px;max-width:210px;margin:22px 0 10px}.morrow-auth .auth-panel{padding:28px 22px}}
